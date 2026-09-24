@@ -1,0 +1,19 @@
+/* 問題は常に画面中央に表示し、落下・制限時間を使わないゲームモード */
+.stage {
+  height: clamp(260px, calc(100svh - 343px), 480px);
+}
+
+.card {
+  top: 50%;
+}
+
+#feedback {
+  top: calc(50% + 100px);
+  font-size: 14px;
+}
+
+@media (max-height: 740px) {
+  .stage {
+    height: clamp(230px, calc(100svh - 307px), 440px);
+  }
+}
